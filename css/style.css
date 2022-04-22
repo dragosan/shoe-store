@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 90%;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  font-weight: bolder;
+}
+
+.title{
+  font-size: 1.2rem;
+ text-transform: capitalize;
+ margin:.3rem;
+}
+
+.link {
+  text-transform: lowercase;
+}
+i {
+  margin-right: .3rem;
+  color:blue;
+}
+.btn {
+  padding: 0.8rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  font-size: .9rem;
+  max-width: 7rem;
+}
+
+.reverse {
+  background-color: #fff;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.header {
+  background-color: #f5f5f5;
+  padding: 0.2rem;
+}
+
+.header .container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding: 0.2rem;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem;
+}
+
+.logo {
+  font-family: "Raleway", cursive;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-left: 3.5rem;
+}
+
+.main-nav .container ul {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.main-nav .container ul li {
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+}
+
+.hero {
+  margin: .5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  height: 75vh;
+  max-width: 90%;  
+}
+
+.find-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  margin:1rem auto;
+  background:url("../img/hero.jpg") no-repeat center 75%/cover;
+  height:80vh;
+  max-width: 90vw;
+  position: relative;
+  color:#fff;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.banner-title {
+  width:30%;
+  font-size: 3rem;
+  display: block;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  text-align: left;
+  font-weight: 80;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.heros .container{
+  margin: 1rem auto;
+  display:flex;
+  justify-content: space-between;
+  gap:0.5rem;
+}
+
+.heros img {
+  flex:1;
+  width:48%;
+}
+
+
+
+.info .container { 
+  margin: .5rem auto; 
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.info .container article{
+  flex:1; 
+}
+
+.info-data h2 {
+  color:rgb(181, 79, 24);
+}
+
+footer {
+  background-color: #000;
+  height: 10rem;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
+  position: relative;
+}
+
+footer a {
+  color:#fff;
+}
+
+.footer-top {
+ 
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+
+
+
+.social {
+ 
+  text-align: center;
+  
+}
+
+
+.social ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social ul li {
+  margin-right: 1.5rem;
+}
+
+i {
+  color:#ccc;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding : 2rem .5rem;
+}
+
+
+.contact{
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 105vh;
+  margin: 2rem auto;
+  grid-gap: 1rem;
+}
+
+.contact h3 {
+  margin: 0.1rem;
+}
+
+.contact .info {
+  display: grid;
+  grid-template-rows: 40% 40%;
+  line-height: 2rem;
+}
+
+.contact .info-form form {
+  height: 100%;
+  margin-top: 3rem;
+}
+
+#fname,
+#email,
+#country,
+textarea {
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+
+  margin-bottom: 0.6rem; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.contact input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#map {
+  height: 80%;
+}
+
+/* About */
+
+
+.content{
+  max-height: 20rem;
+  
+}
+.content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+  text-align: center;
+}
+
+.contact a {
+  color : blue;
+}
+
+
+
+
+@media only screen and (max-width:800px){
+
+  .heading {
+    font-size: 2rem;
+    
+    font-weight: bold;
+  }
+  
+  .btn {
+    padding: 0.4rem;
+    background-color: #000;
+    
+    max-width: 5rem;
+    font-size: .8rem;
+  }
+
+  .reverse {
+    background-color: #fff;
+    color: #000;
+    margin-left: 1rem;
+    max-width: 5rem;
+    font-size: .8rem;
+  }
+
+
+  .banner {
+   
+    background:url("../img/hero.jpg") no-repeat 10% 80%/cover;
+   
+  }
+
+  .banner-title {
+    font-size: 1.6rem;   
+    
+  }
+
+  .heros .container {
+    margin: 1rem auto;
+    display:block;
+    
+  }
+  
+  .heros img {
+    display: block;
+    width:100%;
+    height: 90vh;
+    margin-bottom: .5rem;
+  }
+
+
+  .info .container { 
+    display: block;
+        
+  }
+  
+.footer-top div:nth-child(2),
+.footer-top div:nth-child(3){
+  display: none;
+}
+
+.footer-top div cite:nth-child(2)
+{
+  display: none;
+}
+
+
+.contact{
+ 
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50%;  
+}
+
+
+
+}
+
+
+
+
+

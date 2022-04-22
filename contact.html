@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Us</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item"><a href="./index.html" class="link">Home |</a></li>             
+                
+                                   
+                <li class="menu-item"><a href="./about.html" class="link">about</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="contact container">
+        <div class="info">
+          <div class="info-data">
+            <h2>Contact Info</h2>
+  
+            <h3 class="title">
+              <i class="fas fa-map-marker-alt"></i> Address
+            </h3>
+            <h2>21 Talat Harb Street</h2>
+            <h2>1 Mostafa Elwakeel ,Roxi</h2>
+            <h3>
+              <i class="fas fa-phone"></i> Phone
+            </h3>
+            <h2>02-23931603</h2>
+            <h2>02-24187828</h2>
+            <h3>
+              <i class="fas fa-email"></i> Email
+            </h3>
+            <h2><a class="link" href="mailto:zalatfootwear@gmail.com" target="_blank">
+              <i class="fab fa-google"></i>zalatfootwear@gmail.com</a></h2>
+            
+            
+            <!-- <h3>
+              <i class="fas fa-phone-volume"></i> Support
+            </h3>
+            <a class="email" href={`mailto:${email}`}></a>
+             
+            </a> -->
+          </div>
+          <!-- <div class="info-form">
+            <form ref={form} onSubmit={onSubmit}>
+              <label htmlFor="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="user_name"
+                placeholder="Your name.. ."
+              />
+  
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="Your Email.."
+                required
+              />
+  
+              <label htmlFor="country">Country</label>
+              <Countries />
+  
+              <label htmlFor="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="message"
+                placeholder="Write something.."
+                
+              ></textarea>
+  
+              <input class="button" type="submit" value="Submit" />
+             
+            </form>
+          </div> -->
+        </div>
+        <div id="map"></div>
+      </div>
+
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADbGCP1bF5U7FYw5TCAGMVBSoboEorvv4&map_ids=90827bd74f6e05cf&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="./main.js"></script>
+       <!-- AIzaSyADbGCP1bF5U7FYw5TCAGMVBSoboEorvv4 -->
+       <!-- map id 90827bd74f6e05cf -->
+</body>
+</html>
